@@ -9,10 +9,7 @@
         <router-link to="/find">Find</router-link>
       </li>
       <li>
-        <router-link to="/mall">Mall</router-link>
-      </li>
-      <li>
-        <router-link to="/me">Me</router-link>
+        <router-link to="/mall">Mall333</router-link>
       </li>
     </ul>    
   </div>
