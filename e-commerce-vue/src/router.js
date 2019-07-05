@@ -1,15 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
-import Home from './components/views/home.vue'
-import Find from './components/views/find.vue'
-import Mall from './components/views/mall.vue'
-import Me from './components/views/me.vue'
+import Home from './views/home.vue'
+import Find from './views/find.vue'
+import Mall from './views/mall.vue'
+import Me from './views/me.vue'
+import Funs from './components/me/funs.vue'
+import Comment from './components/me/comment.vue'
+import SystemNotification from './components/me/systemNotification.vue'
+import ThumbsUp from './components/me/thumbsUp.vue'
 const router = new Router({
   mode: 'history',  
   routes: [
     {
-        path: '/home',
+        path: '/',
         component: Home
     },
     {
@@ -23,6 +27,22 @@ const router = new Router({
     {
         path: '/me',
         component: Me
+    },
+    {
+        path: '/me/funs',
+        component: Funs
+    },
+    {
+        path: '/me/comment',
+        component: Comment
+    },
+    {
+        path: '/me/systemNotification',
+        component: SystemNotification
+    },
+    {
+        path: '/me/thumbsUp',
+        component: ThumbsUp
     },
   ]
 })

@@ -1,15 +1,19 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>    
+  <div class="funs">
+     <backPage :title="title"></backPage>   
   </div>
 </template>
 
 <script>
+import backPage from './backPage.vue'
 export default {
-  name: 'me',  
+  name: 'funs', 
+  components:{
+    backPage
+  }, 
   data(){
       return {
-          msg:'me'
+          title:'我的粉丝'
       }
   }
 }
